@@ -117,9 +117,9 @@ const Navbar = () => {
           />
         </div>
 
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4 translate-x-4">
           <Button variant="nav" size="sm" asChild className="font-bold border-2 border-primary/30">
-            <a href={DASHBOARD_URL} target="_blank" rel="noopener noreferrer">Launch Dashboard</a>
+            <Link to="/product">Launch Dashboard</Link>
           </Button>
         </div>
 
@@ -153,7 +153,7 @@ const Navbar = () => {
             ))}
           </div>
           <Button variant="nav" size="lg" className="mt-8 w-full py-6 text-lg font-black uppercase tracking-widest border-3 border-foreground/20 shadow-lg" asChild>
-            <a href={DASHBOARD_URL} target="_blank" rel="noopener noreferrer">Innovation Builder</a>
+            <Link to="/product" onClick={() => setMobileOpen(false)}>Innovation Builder</Link>
           </Button>
         </div>
       )}

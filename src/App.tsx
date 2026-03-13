@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import CookieConsent from "./components/CookieConsent";
 import Index from "./pages/Index";
 import ProductPage from "./pages/ProductPage";
 import { useEffect } from "react";
@@ -41,6 +42,7 @@ const AppInner = () => {
       </main>
       <Footer />
       <ScrollToTop />
+      <CookieConsent />
     </div>
   );
 };
